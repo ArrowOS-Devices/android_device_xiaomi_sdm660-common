@@ -432,6 +432,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
+    libstdc++.vendor \
     vndk-ext \
     vndk_package
 
