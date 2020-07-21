@@ -34,6 +34,7 @@
 #include <sys/sysinfo.h>
 #include <unistd.h>
 
+#include <android-base/file.h>
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
@@ -42,6 +43,7 @@
 #include "property_service.h"
 
 using android::base::GetProperty;
+using android::base::ReadFileToString;
 using android::init::property_set;
 
 char const *heapstartsize;
@@ -94,4 +96,21 @@ void vendor_load_properties()
     property_set("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_set("dalvik.vm.heapminfree", heapminfree);
     property_set("dalvik.vm.heapmaxfree", heapmaxfree);
+
+    std::string hw_device;
+    char const *hw_id_file = "/sys/devices/platform/HardwareInfo/hw_id";
+    ReadFileToString(hw_id_file, &hw_device);
+    if (hw_device.find("D9P") != std::string::npos) {
+        property_set("persist.sys.fp.vendor", "fpc");
+        property_set("ro.board.variant", "d9p");
+        property_set("ro.sf.lcd_density", "265");
+        property_set("persist.radio.multisim.config", "ssss");
+        property_set("ro.product.model", "MI PAD 4 PLUS");
+    } else if (hw_device.find("D9") != std::string::npos) {
+        property_set("persist.sys.fp.vendor", "none");
+        property_set("ro.board.variant", "d9");
+        property_set("ro.sf.lcd_density", "320");
+        property_set("persist.radio.multisim.config", "ssss");
+        property_set("ro.product.model", "MI PAD 4");
+    }
 }
