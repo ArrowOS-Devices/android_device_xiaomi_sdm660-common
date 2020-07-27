@@ -60,7 +60,11 @@ BOARD_RAMDISK_OFFSET     := 0x02000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
+ifeq ($(TARGET_DEVICE), clover)
+TARGET_KERNEL_SOURCE := kernel/xiaomi/clover
+else
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
+endif
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # QCOM hardware
