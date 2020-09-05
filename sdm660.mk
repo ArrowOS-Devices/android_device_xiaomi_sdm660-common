@@ -329,6 +329,10 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Pixel offline charging animation
 PRODUCT_PACKAGES += \
     charger_res_images \
