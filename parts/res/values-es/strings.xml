@@ -25,4 +25,13 @@
     <string name="thermal_dialer">Llamadas</string>
     <string name="thermal_gaming">Juegos</string>
     <string name="thermal_streaming">Transmisión</string>
+
+    <!-- Kcal settings -->
+    <string name="kcal_settings_title">Ajustes del color</string>
+    <string name="kcal_settings_summary">Ajusta el color de la pantalla</string>
+    <string name="kcal_enable_title">Habilitar el ajuste del color de la pantalla</string>
+    <string name="kcal_enable_summary">Habilita el ajuste del color de la pantalla para una configuración personalizada</string>
+    <string name="red_slider_title">Rojo</string>
+    <string name="green_slider_title">Verde</string>
+    <string name="blue_slider_title">Azul</string>
 </resources>
