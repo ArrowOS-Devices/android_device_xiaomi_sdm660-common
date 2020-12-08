@@ -35,9 +35,10 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     public void onReceive(final Context context, Intent intent) {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
 
-        KcalUtils.writeCurrentSettings(sharedPrefs);
-
         DozeUtils.checkDozeService(context);
         ThermalUtils.startService(context);
+
+        if (KcalUtils.isKcalSupported())
+            KcalUtils.writeCurrentSettings(sharedPrefs);
     }
 }
