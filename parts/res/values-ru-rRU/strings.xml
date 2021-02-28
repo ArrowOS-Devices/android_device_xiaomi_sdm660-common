@@ -16,6 +16,17 @@
      limitations under the License.
 -->
 <resources>
+<!-- Thermal profiles -->
+    <string name="thermal_title">Профили оптимизации</string>
+    <string name="thermal_summary">Установите профили температуры для оптимальной производительности приложений</string>
+    <string name="thermal_default">По умолчанию</string>
+    <string name="thermal_benchmark">Бенчмарк</string>
+    <string name="thermal_browser">Браузер</string>
+    <string name="thermal_camera">Камера</string>
+    <string name="thermal_dialer">Звонки</string>
+    <string name="thermal_gaming">Игры</string>
+    <string name="thermal_streaming">Стриминг</string>
+
     <!-- Dirac settings -->
     <string name="dirac_title">Улучшение звука Mi</string>
     <string name="dirac_summary">Улучшить качество звука</string>
