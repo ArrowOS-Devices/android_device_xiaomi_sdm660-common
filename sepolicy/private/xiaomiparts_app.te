@@ -3,7 +3,10 @@ type xiaomiparts_app, domain;
 app_domain(xiaomiparts_app)
 
 # Access standard system services
-allow xiaomiparts_app app_api_service:service_manager find;
+allow xiaomiparts_app {
+  app_api_service
+  audioserver_service
+}:service_manager find;
 
 # Allow reading and writing shared prefs
 allow xiaomiparts_app system_app_data_file:dir create_dir_perms;
