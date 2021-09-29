@@ -16,9 +16,20 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">温控面板</string>
+    <string name="thermal_summary">调整各个应用所使用的温控配置以获得更好的性能表现</string>
+    <string name="thermal_default">默认</string>
+    <string name="thermal_benchmark">跑分</string>
+    <string name="thermal_browser">浏览器</string>
+    <string name="thermal_camera">相机</string>
+    <string name="thermal_dialer">拨号</string>
+    <string name="thermal_gaming">游戏</string>
+    <string name="thermal_streaming">流媒体</string>
+
     <!-- Dirac settings -->
-    <string name="dirac_title">使用米音提升音质</string>
-    <string name="dirac_summary">米音</string>
+    <string name="dirac_title">米音</string>
+    <string name="dirac_summary">使用米音提升音质</string>
     <string name="dirac_headset_title">耳机类型设置</string>
     <string name="dirac_preset_title">请选择预设效果</string>
     <!-- Dirac settings: Headset types -->
@@ -56,4 +67,6 @@
     <string name="dirac_preset_country">乡村</string>
     <string name="dirac_preset_dance">舞曲</string>
     <string name="dirac_preset_metal">金属</string>
+    <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">米音</string>
 </resources>
