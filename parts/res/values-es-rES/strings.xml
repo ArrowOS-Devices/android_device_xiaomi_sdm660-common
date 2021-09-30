@@ -16,15 +16,27 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Perfiles de Optimización</string>
+    <string name="thermal_summary">Permite el ajuste de los perfiles térmicos por aplicación para un rendimiento optimo</string>
+    <string name="thermal_default">Predeterminado</string>
+    <string name="thermal_benchmark">Rendimiento</string>
+    <string name="thermal_browser">Navegación web</string>
+    <string name="thermal_camera">Cámara</string>
+    <string name="thermal_dialer">Llamadas</string>
+    <string name="thermal_gaming">Juegos</string>
+    <string name="thermal_streaming">Transmisión en directo</string>
+
     <!-- Dirac settings -->
     <string name="dirac_title">Mi Sound Enhancer</string>
     <string name="dirac_summary">Optimizar la calidad del audio</string>
     <string name="dirac_headset_title">Selecciona el tipo de auriculares</string>
     <string name="dirac_preset_title">Selecciona un preajuste</string>
+
     <!-- Dirac settings: Headset types -->
     <string name="dirac_headset_default">Predeterminado</string>
     <string name="dirac_headset_earbuds">Auriculares de tapón Mi</string>
-    <string name="dirac_headset_in_ear_2013">Mi Intrauriculares (2013)</string>
+    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
     <string name="dirac_headset_piston_1">Mi Piston-1</string>
     <string name="dirac_headset_general">General</string>
     <string name="dirac_headset_general_inear">Intrauriculares genéricos</string>
@@ -34,16 +46,17 @@
     <string name="dirac_headset_headphone">Auriculares Mi</string>
     <string name="dirac_headset_piston_youth">Edición juvenil</string>
     <string name="dirac_headset_piston_color">Edición a color</string>
-    <string name="dirac_headset_in_ear">Mi Intrauriculares</string>
-    <string name="dirac_headset_capsule">Mi Cápsula</string>
-    <string name="dirac_headset_in_ear_pro">Mi Intrauriculares Pro</string>
+    <string name="dirac_headset_in_ear">Mi In-Ear</string>
+    <string name="dirac_headset_capsule">Mi Capsule</string>
+    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro</string>
     <string name="dirac_headset_comfort">Mi Comfort</string>
-    <string name="dirac_headset_reduction_noise">Cancelación de Ruido Mi Tipo C</string>
-    <string name="dirac_headset_cancelling">Cancelación de Ruido Mi 3.5mm</string>
+    <string name="dirac_headset_reduction_noise">Mi Cancelación de Ruido Type-C</string>
+    <string name="dirac_headset_cancelling">Mi Cancelación de Ruido 3.5mm</string>
     <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
     <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
     <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
     <string name="dirac_headset_earphone">Mi Earphones</string>
+
     <!-- Dirac settings: Equalizer presets -->
     <string name="dirac_preset_default">Predeterminado</string>
     <string name="dirac_preset_rock">Rock</string>
@@ -56,4 +69,7 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+
+     <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Sonido Dirac</string>
 </resources>
