@@ -3,7 +3,11 @@
     "repository": "android_device_xiaomi_extras",
     "target_path": "device/xiaomi/extras"
   },
+<<<<<<< HEAD:awaken.dependencies
     {
+=======
+  {
+>>>>>>> e770dea128e38d5ab4d2c1cd8b6edf5ea6a4082c:arrow.dependencies
     "repository": "android_hardware_xiaomi",
     "target_path": "hardware/xiaomi"
   },
